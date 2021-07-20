@@ -15,7 +15,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Dcoder</a>
+            <a class="navbar-brand" href="/">Dcoder</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -27,7 +27,7 @@
                         <a class="nav-link active" aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="/about.html">About</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -46,16 +46,50 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" href="/contact.html">Contact Us</a>
                     </li>
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
+                <div class="btn btn-danger mx-2 px-3" data-bs-toggle="modal" data-bs-target="#loginModal">Login</div>
             </div>
         </div>
     </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Enter login Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="form-signin">
+                        <label for="inputEmail" class="sr-only">Email address</label>
+                        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+                        <label for="inputPassword" class="sr-only">Password</label>
+                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+                        <div class="checkbox mb-3">
+                          <label>
+                            <input type="checkbox" value="remember-me"> Remember me
+                          </label>
+                        </div>
+                        <button class="btn btn-success btn-block" type="submit">Sign in</button>
+                        <p class="login-callout mt-3">
+                            New to Dcoder?
+                            <a href="#">Create an account</a>.
+                          </p>
+                        <p class="mt-2 mb-3 text-muted">© 2017-2021</p>
+                      </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- slider -->
     <header>
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -219,9 +253,9 @@
             <p class="float-end mb-1">
                 <a href="#">Back to top</a>
             </p>
-            <p class="mb-1">Album example is © Bootstrap, but please download and customize it for yourself!</p>
-            <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a
-                    href="/docs/5.0/getting-started/introduction/">getting started guide.</a></p>
+            <p class="mb-1">© Dcoder 2021, We have provided you the right resources!</p>
+            <p class="mb-0">New to Dcoder? <a href="#">Visit the Starting guide</a> or read our <a href="#">Terms &
+                    Conditions.</a></p>
         </div>
     </footer>
     <!-- Scripts -->
